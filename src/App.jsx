@@ -1,16 +1,17 @@
-import { createSignal } from 'solid-js'
-
-import './App.css'
+import banner from "./assets/banner.jpg"
+import Card from "./components/Card"
 
 function App() {
-  const [count, setCount] = createSignal(0)
 
   return (
     <>
-      <h1>Hey Solid</h1>
-      <div><button onClick={() => setCount((count) => count + 1)}>
-        count is {count()}
-      </button></div>
+      <header>
+        <h1>Ninja Merch</h1>
+      </header>
+
+      <img src={banner} alt="banner"/>
+
+      <Card />
     </>
   )
 }
